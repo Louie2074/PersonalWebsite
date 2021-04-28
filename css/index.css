@@ -142,6 +142,7 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+
     .navbar {
       bottom: 0;
       width: 100vw;
@@ -160,12 +161,34 @@
       justify-content: center;
     }
     .nav-item:nth-child(n+6){
+
         display:none;
     }
-    .nav-item{
-        padding-right: 30px;
-    }
-
+    .nav-link:hover {
+        filter: grayscale(0%) opacity(1);
+        background: #202020;
+        color: var(--text-primary);
+      }
+    .navreg{
+        position: static;
+        padding-left: 0px;
+        transition: var(--transition-speed);
+      }
+      .code{
+        position: static;
+        padding-left: 0px;
+        transition: var(--transition-speed);
+      }
+      .plane{
+        position: static;
+        padding-left: 0px;
+        transition: var(--transition-speed);
+      }
+      .house{
+        position: static;
+        padding-left: 0px;
+        transition: var(--transition-speed);
+      }
   
     main {
       margin: 0;
