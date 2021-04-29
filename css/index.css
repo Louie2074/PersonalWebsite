@@ -6,21 +6,22 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    
   }
   
   body {
     color: black;
-    background-color: white;
+    background-color:#05050c;
     margin: 0;
     padding: 0;
-
+    overflow: scroll;
+    overflow: hidden;
+  }
+  main{
+    margin: 5rem;
+    padding: auto;
   }
 
-
-  main {
-    margin-left: 5rem;
-    padding: 1rem;
-  }
   
   .navbar {
     position: fixed;
@@ -134,6 +135,7 @@
   .navbar:hover .logoMain{
     display: none;
   }
+  
   .logoMain{
     position: static;
     padding-left: 20px;
