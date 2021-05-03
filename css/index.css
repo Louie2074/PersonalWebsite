@@ -53,6 +53,7 @@
     background-color:#05050c;
     margin: 0;
     padding: 0;
+   
   }
   body::-webkit-scrollbar{
     width: 0;
@@ -223,7 +224,7 @@
       position:relative;
       right: 10%;
       grid-template-columns: repeat(3, 1fr);
-      padding-bottom: 20%;
+      padding-bottom: 25%;
       
     }
 
