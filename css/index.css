@@ -215,7 +215,8 @@
       align-items: left;
       height: auto;
 
-      padding-right: 100%;
+      position:relative;
+      right: 6%;
       grid-template-columns: repeat(3, 1fr);
       padding-bottom: 20%;
       
