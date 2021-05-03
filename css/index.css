@@ -6,8 +6,8 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: scroll;
+    overflow: hidden;
     
   }
   .aboutDesc{
@@ -28,7 +28,6 @@
     align-items: center;
     height: auto;
     margin: 2%;
-  
     padding-bottom: 20%;
   }
   .aboutIcon{
@@ -196,6 +195,10 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+    :root{
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
     body{
       overflow-y: scroll;
       overflow-x: hidden;
@@ -209,12 +212,13 @@
       color: #eee;
       display: grid;
       justify-content: left;
-      align-items: center;
+      align-items: left;
       height: auto;
-      margin: 2%;
-      grid-template-columns: repeat(3,1fr);
+
+      padding-right: 100%;
+      grid-template-columns: repeat(3, 1fr);
       padding-bottom: 20%;
-      padding-right: 10%;
+      
     }
 
     .navbar {
