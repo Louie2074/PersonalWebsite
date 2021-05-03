@@ -6,16 +6,55 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
   }
+  .aboutDesc{
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 10;
+  }
+
+  .aboutIconContainer{
+    list-style: none;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 2%;
   
+    padding-bottom: 20%;
+  }
+  .aboutIcon{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+  }
+  .aboutIconDesc{
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  
+  }
   body {
     color: black;
     background-color:#05050c;
     margin: 0;
     padding: 0;
-    overflow: scroll;
-    overflow: hidden;
+  }
+  body::-webkit-scrollbar{
+    width: 0;
   }
   main{
     margin: 5rem;
@@ -40,8 +79,21 @@
     align-items: center;
     height: 100%;
   }
-  
+
+  /*id for individual nav items*/
   .nav-item {
+    width: 100%;
+  }
+  #nav-item-home {
+    width: 100%;
+  }
+  #nav-item-about {
+    width: 100%;
+  }
+  #nav-item-project {
+    width: 100%;
+  }
+  #nav-item-contact {
     width: 100%;
   }
   .nav-item:nth-child(6){
@@ -144,6 +196,26 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+    body{
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    .aboutDesc{
+      justify-content: left;
+      align-content: left;
+    }
+    .aboutIconContainer{
+      list-style: none;
+      color: #eee;
+      display: grid;
+      justify-content: left;
+      align-items: center;
+      height: auto;
+      margin: 2%;
+      grid-template-columns: repeat(3,1fr);
+      padding-bottom: 20%;
+      padding-right: 10%;
+    }
 
     .navbar {
       bottom: 0;
@@ -193,7 +265,7 @@
       }
   
     main {
-      margin: 0;
+      margin: 4%;
     }
   }
   
