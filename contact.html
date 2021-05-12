@@ -81,7 +81,7 @@
             class="nav-link"
           >
             <i class="fab fa-linkedin linkedin fa-2x"></i>
-            <span class="link-text">LinkedIn</span>
+            <span class="link-text">linkedin</span>
           </a>
         </li>
 
@@ -96,8 +96,39 @@
 
 
     <!--Main content to be served-->
-    <main>
-     
+    <main><div class="container">
+ 
+    <!--contact section start-->
+    <div class="contact-section">
+      <div class="contact-info">
+        <div><a
+          href="https://github.com/Louie2074?tab=repositories"
+          target="_blank"
+          class="contactintra-link"
+        ><i class="fab fa-github"></i>Github</a></div>
+        <div><a
+          href="https://www.linkedin.com/in/nguyen2001"
+          target="_blank"
+          class="contactintra-link"
+        ><i class="fab fa-linkedin"></i>linkedin</a></div>
+        <div><a
+          href="mailto:louishnguyen01@hotmail.com"
+          class="contactintra-link"
+        ><i class="fas fa-envelope"></i>louishnguyen01@gmail.com</a></div>
+      
+      </div>
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="my-form" action="https://formspree.io/f/mleagwej" method="POST">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+          <textarea type = "text" name="message" class = "textarea" rows="5" placeholder="Your Message" required></textarea>
+          <button id="my-form-button" class="send-btn">Submit</button>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+    </div>
+    <!--contact section end-->
     </main>
     <!--All Js-->
     
