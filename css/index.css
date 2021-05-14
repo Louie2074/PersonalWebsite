@@ -320,19 +320,7 @@
     transition: var(--transition-speed);
   }
   
-  .contactintra-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
+
 
   
   /* Small screens */
@@ -449,6 +437,8 @@
     .contact-form .text-box{
       width: 100%;
     }
+
+
   }
   
   /* Large screens */
@@ -493,6 +483,19 @@
     {
       left: 0px;
     }
+    .contactintra-link:hover {
+      filter: grayscale(0%) opacity(1);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 20px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
   }
 
   @media only screen and (min-width: 600px)and (max-width: 1200px) {
@@ -513,7 +516,7 @@
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 30px;
   }
   
   @keyframes typing {
