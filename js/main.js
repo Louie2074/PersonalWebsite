@@ -1,16 +1,13 @@
 
 document.getElementById("nav-item-home").addEventListener('click', () => {
-    if(window.screen.width>600){
+ 
     $( "main" ).load( "index.html main" ); 
     $("main").css("background-image", "none");
     $("body").css("background-image", "none");
-    $("body").css("background-image", "url('img/pexels-iconcom-733031.jpg')");
-    }else{
-    $( "main" ).load( "index.html main" ); 
-    $("main").css("background-image", "none");
-    $("body").css("background-image", "none");
-    $("body").css("background-image", "url('img/doge.png')");
-    }
+    $("body").css("background-image", "url('img/pexels-sam-kolder-2387873.jpg')");
+    $("body").css("background-image", "no-repeat");
+    $("body").css("background-size", "cover");
+    
 });
 document.getElementById("nav-item-about").addEventListener('click', () => {
     $( "main" ).load( "about.html main" ); 
@@ -18,12 +15,14 @@ document.getElementById("nav-item-about").addEventListener('click', () => {
     $("body").css("background-image", "none");
     $("body").css("background-image", "url('img/pexels-aarti-vijay-2693529.jpg')");
 
+
 });
 document.getElementById("nav-item-contact").addEventListener('click', () => {
     $( "main" ).load( "contact.html main" ); 
     $("main").css("background-image", "none");
     $("body").css("background-image", "none");
     $("body").css("background-image", "url('img/pexels-sanaan-mazhar-3075993.jpg')");
+
 });
 
     var form = document.getElementById("my-form");
@@ -48,4 +47,4 @@ document.getElementById("nav-item-contact").addEventListener('click', () => {
     form.addEventListener("submit", handleSubmit)
 
 
-
+    

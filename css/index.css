@@ -11,8 +11,11 @@
     overflow: hidden;
     
   }
+  html {
+    min-height: 100%;
+ }
   body {
-
+ 
     color: black;
     background-color:#05050c;
     margin: 0;
@@ -213,6 +216,7 @@
   .contact-section{
     width: 100%;
     display: flex;
+    
     justify-content: center;
     align-items: center;
   }
@@ -223,6 +227,8 @@
     line-height: 100px;
     padding-left: 50px;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
   }
   
   .contact-info i{
@@ -232,7 +238,7 @@
   
   .contact-form{
     max-width: 700px;
-    margin-right: 50px;
+    margin-left: 5%;
   }
   
   .contact-info, .contact-form{
@@ -331,6 +337,13 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+    .wrapper {
+      padding-right: 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: top;
+      justify-content: center;
+    }
     :root{
       overflow-y: scroll;
       overflow-x: hidden;
@@ -438,6 +451,15 @@
   
   /* Large screens */
   @media only screen and (min-width: 600px) {
+    
+  .wrapper {
+    padding-right: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+  }
+  
     .navbar {
       top: 0;
       width: 5rem;
@@ -470,4 +492,36 @@
       left: 0px;
     }
   }
- 
+
+  @media only screen and (min-width: 600px)and (max-width: 1200px) {
+    
+    .wrapper {
+      padding-right: 0%;
+      display: flex;
+      flex-direction: row;
+      align-items: top;
+      justify-content: center;
+    }
+    }
+
+  .intro {
+    width: 20ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
