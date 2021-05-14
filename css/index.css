@@ -338,7 +338,7 @@
   /* Small screens */
   @media only screen and (max-width: 600px) {
     .wrapper {
-      padding-right: 10%;
+      padding-right: 0%;
       display: flex;
       flex-direction: row;
       align-items: top;
