@@ -1,6 +1,6 @@
 
 document.getElementById("nav-item-home").addEventListener('click', () => {
- 
+
     $( "main" ).load( "index.html main" ); 
     $("main").css("background-image", "none");
     $("body").css("background-image", "none");
