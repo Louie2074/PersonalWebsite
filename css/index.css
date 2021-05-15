@@ -9,7 +9,8 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
-html,body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
