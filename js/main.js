@@ -7,22 +7,18 @@ document.getElementById("nav-item-home").addEventListener('click', () => {
     $("body").css("background-image", "url('img/pexels-sam-kolder-2387873.webp')");
     $("body").css("background-image", "no-repeat");
     $("body").css("background-size", "cover");
-    
 });
 document.getElementById("nav-item-about").addEventListener('click', () => {
     $( "main" ).load( "about.html main" ); 
     $("main").css("background-image", "none");
     $("body").css("background-image", "none");
     $("body").css("background-image", "url('img/pexels-aarti-vijay-2693529.webp')");
-
-
 });
 document.getElementById("nav-item-contact").addEventListener('click', () => {
     $( "main" ).load( "contact.html main" ); 
     $("main").css("background-image", "none");
     $("body").css("background-image", "none");
     $("body").css("background-image", "url('img/pexels-sanaan-mazhar-3075993.webp')");
-
 });
 
     var form = document.getElementById("my-form");
