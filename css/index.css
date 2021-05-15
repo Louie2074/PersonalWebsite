@@ -335,6 +335,16 @@ main {
     align-items: top;
     justify-content: center;
   }
+  .intro {
+    width: 20ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-display: swap;
+    font-size: 25px;
+  }
 
   :root {
     overflow-y: scroll;
@@ -449,6 +459,17 @@ main {
     align-items: top;
     justify-content: center;
   }
+  /*Animation typewriter*/
+.intro {
+  width: 20ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-display: swap;
+  font-size: 30px;
+}
 
   .navbar {
     top: 0;
@@ -501,20 +522,7 @@ main {
     align-items: top;
     justify-content: center;
   }
-}
-
-/*Low height screens*/
-@media only screen and (max-height: 550px) {
-  :root {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .nav-item:nth-child(n + 6) {
-    display: none;
-  }
-}
-
-/*Animation typewriter*/
+  /*Animation typewriter*/
 .intro {
   width: 20ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
@@ -525,6 +533,31 @@ main {
   font-display: swap;
   font-size: 30px;
 }
+}
+
+/*Low height screens*/
+@media only screen and (max-height: 550px) {
+  :root {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  /*Animation typewriter*/
+.intro {
+  width: 20ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-display: swap;
+  font-size: 30px;
+}
+  .nav-item:nth-child(n + 6) {
+    display: none;
+  }
+}
+
+
 
 @keyframes typing {
   from {
