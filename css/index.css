@@ -536,7 +536,7 @@ main {
 }
 
 /*Low height screens*/
-@media only screen and (max-height: 550px) {
+@media only screen and (max-height: 650px) {
   :root {
     overflow-y: scroll;
     overflow-x: hidden;
