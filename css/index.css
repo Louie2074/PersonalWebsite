@@ -83,7 +83,8 @@ main {
 
 .navbar {
   z-index: 100;
-  position: fixed;
+  position: sticky;
+  bottom: 0;
   background-color: #202020;
   transition: width 600ms ease;
   overflow: scroll;
