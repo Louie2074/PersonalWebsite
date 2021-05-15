@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Welcome to my Personal Website! Everything on here is about me!" />
+    <meta
+      name="description"
+      content="Welcome to my Personal Website! Everything on here is about me!"
+    />
     <meta name="keywords" content="Louis Nguyen" />
-    <meta name="author" content="Louis Nguyen, Louis, Nguyen, Computer Science, UW Madison, University of Wisconsin Madison" />
+    <meta
+      name="author"
+      content="Louis Nguyen, Louis, Nguyen, Computer Science, UW Madison, University of Wisconsin Madison"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <!--Header bar icons-->
     <link href="img/logo.png" type="image/png" rel="icon" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#23232e"/>
-    <link rel="apple-touch-icon" href="img/logo.png">
+    <meta name="theme-color" content="#23232e" />
+    <link rel="apple-touch-icon" href="img/logo.png" />
 
-  <title>Louis Nguyen</title>
+    <title>Louis Nguyen</title>
   </head>
-  <body style="background: url('img/pexels-sam-kolder-2387873.webp') no-repeat; background-size:cover" onerror="this.src='img/pexels-sam-kolder-2387873.jpg';">
+  <body
+    style="
+      background: url('img/pexels-sam-kolder-2387873.webp') no-repeat;
+      background-size: cover;
+    "
+    onerror="this.src='img/pexels-sam-kolder-2387873.jpg';"
+  >
     <!--Beginning of navigation bar-->
-    
+
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
@@ -42,7 +54,12 @@
         </li>
 
         <li id="nav-item-project">
-          <a href="https://github.com/Louie2074?tab=repositories" target="_blank" rel="noopener" class="nav-link">
+          <a
+            href="https://github.com/Louie2074?tab=repositories"
+            target="_blank"
+            rel="noopener"
+            class="nav-link"
+          >
             <i class="fas fa-code code fa-2x"></i>
             <span class="link-proj">Projects</span>
           </a>
@@ -88,19 +105,28 @@
       </ul>
     </nav>
 
-
     <!--Main content to be served-->
     <main>
       <div class="wrapper">
-        <div class="intro">
-          Hi there, I'm Louis!
-        </div>
-    </div>
+        <div class="intro">Hi there, I'm Louis!</div>
+      </div>
+      <!--Animations-->
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
     </main>
+
     <!--All Js-->
+    <script>
+      let spinnerWrapper = document.querySelector('.loader-wrapper');
+
+      window.setTimeout(function () {
+        $('.loader-wrapper').fadeOut('slow');
+      }, 500);
+    </script>
     <script src="js/main.js"></script>
-      <!--All icon reference link-->
-    <script src = "js/icon.js"></script>
+    <!--All icon reference link-->
+    <script src="js/icon.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
