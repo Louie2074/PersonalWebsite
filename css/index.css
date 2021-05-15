@@ -559,6 +559,14 @@
     }
     }
 
+    /*Low height screens*/
+    @media only screen and (min-height: 550px){
+      :root{
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+    }
+
   .intro {
     width: 20ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
