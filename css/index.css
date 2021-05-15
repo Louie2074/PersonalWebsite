@@ -560,11 +560,16 @@
     }
 
     /*Low height screens*/
-    @media only screen and (min-height: 550px){
+    @media only screen and (max-height: 550px){
       :root{
         overflow-y: scroll;
         overflow-x: hidden;
       }
+      .nav-item:nth-child(n+6){
+
+        display:none;
+    }
+      
     }
 
   .intro {
