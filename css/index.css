@@ -2,6 +2,7 @@
 :root {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -168,6 +169,7 @@
   /*about section css*/
   .aboutDesc{
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     color: #eee;
     display: flex;
     justify-content: center;
@@ -197,6 +199,7 @@
   }
   .aboutIconDesc{
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     color: #eee;
     display: flex;
     padding: 0;
@@ -256,6 +259,7 @@
   .contact-form .text-box{
     background: #000;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     color: #fff;
     border: none;
     width: calc(50% - 10px);
@@ -280,6 +284,7 @@
     padding: 12px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     min-height: 200px;
     max-height: 400px;
     resize: vertical;
@@ -516,6 +521,7 @@
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
+    font-display: swap;
     font-size: 30px;
   }
   
