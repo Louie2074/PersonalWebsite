@@ -9,6 +9,13 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';
@@ -83,8 +90,7 @@ main {
 
 .navbar {
   z-index: 100;
-  position: sticky;
-  bottom: 0;
+  position: fixed;
   background-color: #202020;
   transition: width 600ms ease;
   overflow: scroll;
