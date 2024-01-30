@@ -1,54 +1,46 @@
+// Function to handle navigation clicks
+function handleNavigationClick(item, page, backgroundImg) {
+  document.getElementById(item).addEventListener('click', () => {
+    $("main").empty();
+    $("main").load(`${page}.html main`);
 
-document.getElementById("nav-item-home").addEventListener('click', () => {
-  $("main").empty();
-  $("main").load("index.html main");
-  //Sets timer for animation
-  window.setTimeout(function () {
-    $(".loader-wrapper").fadeOut("slow");
-  }, 500);
-  $("body").css("background-image", "url('img/pexels-sam-kolder-2387873.webp')");
+    // Sets timer for animation
+    window.setTimeout(function () {
+      $(".loader-wrapper").fadeOut("slow");
+    }, 1000);
 
-});
-document.getElementById("nav-item-about").addEventListener('click', () => {
-  //clears and loads main content
-  $("main").empty();
-  $("main").load("about.html main");
-  //Sets timer for animation
-  window.setTimeout(function () {
-    $(".loader-wrapper").fadeOut("slow");
-  }, 1000);
-  //serves background img
-  $("body").css("background-image", "url('img/pexels-aarti-vijay-2693529.webp')");
-});
-document.getElementById("nav-item-contact").addEventListener('click', () => {
-  $("main").empty();
-  $("main").load("contact.html main");
-  window.setTimeout(function () {
-    $(".loader-wrapper").fadeOut("slow");
-  }, 1000);
-
-  $("body").css("background-image", "url('img/pexels-sanaan-mazhar-3075993.webp')");
-});
-
-var form = document.getElementById("my-form");
-async function handleSubmit(event) {
-  event.preventDefault();
-  var status = document.getElementById("my-form-status");
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      'Accept': 'application/json'
-    }
-  }).then(response => {
-    status.innerHTML = "Thanks for your submission!";
-    form.reset()
-  }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    // Serves background image
+    $("body").css("background-image", `url('img/${backgroundImg}.webp')`);
   });
 }
-form.addEventListener("submit", handleSubmit)
 
+// Navigation items
+handleNavigationClick("nav-item-home", "index", "indexBackground");
+handleNavigationClick("nav-item-about", "about", "aboutBackground");
+handleNavigationClick("nav-item-contact", "contact", "contactBackground");
 
+// Form submission
+let form = document.getElementById("my-form");
+async function handleSubmit(event) {
+  event.preventDefault();
+  let status = document.getElementById("my-form-status");
+  let data = new FormData(event.target);
 
+  try {
+    // Using fetch with async/await for better readability
+    const response = await fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    status.innerHTML = "Thanks for your submission!";
+    form.reset();
+  } catch (error) {
+    status.innerHTML = "Oops! There was a problem submitting your form";
+  }
+}
+
+form.addEventListener("submit", handleSubmit);

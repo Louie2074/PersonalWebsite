@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      name="description"
-      content="Welcome to my Personal Website!"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my Personal Website!" />
     <meta name="author" content="Louis Nguyen" />
     <meta
       name="keywords"
-      content="Louis Nguyen, Louis, Nguyen, Computer Science, UW Madison, University of Wisconsin Madison"
+      content="Louis Nguyen, Computer Science, UW Madison, University of Wisconsin Madison"
     />
-    <link rel="stylesheet" href="css/index.css" />
-    <!--Header bar icons-->
-    <link href="img/logo.png" type="image/png" rel="icon" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#23232e" />
-    <link rel="apple-touch-icon" href="img/logo.png" />
 
-    <meta property='og:title' content='Louis Nguyen'/>
-    <meta property='og:image' content='img/IMG_0325.JPG'/>
-    <meta property='og:description' content='Welcome to my Personal Website!'/>
-    <meta property='og:url' content='www.louisnguyen.me'/>
+    <meta property="og:title" content="Louis Nguyen" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta property="og:image" content="img/logo.jpg" />
+    <meta property="og:description" content="Welcome to my Personal Website!" />
+    <meta property="og:url" content="https://www.louisnguyen.me" />
 
     <title>Louis Nguyen</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body
     style="
-      background: url('img/pexels-sam-kolder-2387873.webp') no-repeat;
+      background: url('img/indexBackground.webp') no-repeat;
       background-size: cover;
     "
-    onerror="this.src='img/pexels-sam-kolder-2387873.jpg';"
+    onerror="this.src='img/indexBackground.jpg';"
   >
-    <!--Beginning of navigation bar-->
-
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
@@ -79,7 +71,7 @@
 
         <li class="nav-item">
           <a
-            href="https://github.com/Louie2074?tab=repositories"
+            href="https://github.com/Louie2074"
             target="_blank"
             rel="noopener"
             class="nav-link"
@@ -110,28 +102,24 @@
       </ul>
     </nav>
 
-    <!--Main content to be served-->
     <main>
       <div class="wrapper">
         <div class="intro">Hi there, I'm Louis!</div>
       </div>
-      <!--Animations-->
       <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
       </div>
     </main>
 
-    <!--All Js-->
+    <!-- All Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/icon.js"></script>
     <script>
       let spinnerWrapper = document.querySelector('.loader-wrapper');
-
       window.setTimeout(function () {
         $('.loader-wrapper').fadeOut('slow');
       }, 500);
     </script>
-    <script src="js/main.js"></script>
-    <!--All icon reference link-->
-    <script src="js/icon.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
